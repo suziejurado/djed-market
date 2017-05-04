@@ -1,0 +1,60 @@
+{% extends 'src/html/base.html' %}
+
+{% block 'title' %}Djed | What is Djed{% endblock %}
+
+{% block 'submark' %}
+{% include 'node_modules/djed/marketing/components/submark.html' %}
+{% endblock %}
+
+{% block 'content' %}
+
+<div class="row">
+  <div class="columns columns-full large-12">
+    <h2 class="book headline">What is Djed?</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="columns column-left left large-4">
+    <h2 class="italic what-h2 mobile-h2">Djed is a family application.</h2>
+  </div>
+  <div class="columns column-right large-8">
+    <p>Djed is a social productivity and organization application for your family. It's an integrated set of features that allows your family to use one application to capture what's useful to you now and ten years from now. Your family creates one account. You can add your family members (and pets!).  You can even add your babysitter. You can connect to other families like relatives, if you find yourself sharing some content with others, or just as a safety net just in case. You might use Djed for tracking your kids' sports and school. You might use it for tracking health, assets, and wealth. Or you might just want to try it for having a simple place to share photos and videos. No matter who you are we hope your family finds Djed useful. Drop us a note and let us know <a  href="mailto:help@djed.com">help@djed.com</a>.</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="columns column-left left large-4">
+    <h2 class="italic what-h2 mobile-h2">Djed is a set of features that work together.</h2>
+  </div>
+  <div class="columns column-right large-8">
+    <p>Have you ever wanted one place to keep track of your house? In Djed you can add your house in Assets. You can add the contacts who help you out, like the plumber and the electrician, and the guy who fixed the door that bangs. You can keep track of events for the house. And cool photos before and after you painted it. And the list of things you'd like to update. And how much you spent on utilities last year. Or what the PIN number is for the cable company. That's Djed in a nutshell. And that's just your house!</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="columns column-left left large-4">
+    <h2 class="italic what-h2 mobile-h2">Djed is a great family archive.</h2>
+  </div>
+  <div class="columns column-right large-8">
+    <p>It's one thing to be super organized, to carry all this useful family information with you, but the really incredible thing Djed gives you is a family archive. Have you ever wanted to look across ALL the dance seasons for your daughter? Have you ever wanted a way to see all the medications you've taken? Have you ever wanted one safe place for all the information just in case something happened?</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="columns columns-full large-12">
+    <p>We run this application on Amazon's formidable and secure cloud infrastructure and have people focused on keeping your information private.  The privacy statement is below and is worth reading.</p>
+  </div>
+</div>
+
+<hr>
+
+{% include 'node_modules/djed/marketing/components/request-invite.html' with content %}
+
+{% endblock %}

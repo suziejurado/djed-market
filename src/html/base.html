@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" {% if useAppCache %}manifest="/app.manifest"{% endif %}>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block 'title' %}Djed{% endblock %}</title>
+    <link rel="shortcut icon" href="{{'/img/favicon.ico'|static}}">
+    <link rel="stylesheet" type="text/css" href="{{'/styles.css'|static}}" />
+
+    <meta property="og:image" content="{{page.DOMAIN}}{{'/img/Facebook-Djed-Hero.jpg'|static}}">
+    <meta name="description" content="An app for all the family's private content. Capture the real content about family life we need today and 10 years from now.">
+    <meta property="og:description" content="An app for all the family's private content. Capture the real content about family life we need today and 10 years from now.">
+
+    <meta name="p:domain_verify" content="3f39fc2408ad1b2592d3094d9be1e34f"/>
+
+</head>
+
+<body>
+    {% if stories.length > 1 %}
+    {% include 'node_modules/djed/marketing/components/story-menu.html' with stories %}
+    {% endif %}
+    {% include 'node_modules/djed/marketing/components/mark.html' %}
+    {% block 'submark' %} {% endblock %}
+    {% block 'content' %} {% endblock %}
+    {% include 'node_modules/djed/marketing/components/footer.html' %}
+    <div class="cover-modal none"></div>
+    <script src="{{'/app.js'|static}}"></script>
+    <script>
+        require('djed/marketing')({
+            'SEGMENTIO_WRITE_KEY': '{{page.SEGMENTIO_WRITE_KEY}}',
+            'API_BASE_URL': '{{page.API_BASE_URL}}',
+            'stories': {{stories|json|safe}},
+            'active': '{{story}}'
+        });
+    </script>
+    <script type="text/template" id="invite-modal-template">
+        {% include 'node_modules/djed/marketing/components/invite-modal.html' %}
+    </script>
+</body>
+
+</html>

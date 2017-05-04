@@ -1,0 +1,66 @@
+{% extends 'src/html/base.html' %}
+
+{% block 'title' %}Djed | Jobs{% endblock %}
+
+{% block 'submark' %}
+{% include 'node_modules/djed/marketing/components/submark.html' %}
+{% endblock %}
+
+{% block 'content' %}
+
+</div>
+
+<div class="row">
+    <div class="columns columns-full">
+        <h2 class="book headline">Jobs</h2>
+    </div>
+</div>
+
+<div class="row mobile-center press-row">
+    <div class="columns columns-full large-1 medium-1 small-12">
+        <img src="{{'/img/icon-ios.svg'|static}}" class="jobs-icon">
+    </div>
+    <div class="columns large-2 medium-2 small-12">
+        <a href="listings/ios-engineer.html">iOS Engineer</a>
+    </div>
+    <div class="columns large-2 medium-2 small-12">
+        Austin, TX
+    </div>
+    <div class="columns large-7 medium-7 small-12">
+        Djed, the family app, is looking for cool, motivated, and talented iOS 8 engineers to work full time in downtown Austin, TX.
+    </div>
+</div>
+<div class="row mobile-center">
+    <div class="columns columns-full large-1 medium-1 small-12">
+        <img src="{{'/img/icon-develop.svg'|static}}" class="jobs-icon">
+    </div>
+    <div class="columns large-2 medium-2 small-12">
+        <a href="listings/senior-javascript-engineer.html">Senior Javascript Engineer</a>
+    </div>
+    <div class="columns large-2 medium-2 small-12">
+        Austin, TX
+    </div>
+    <div class="columns large-7 medium-7 small-12">
+        Djed, the family app, is looking for cool, motivated, and talented javascript engineers to work full time in downtown Austin, TX.
+    </div>
+</div>
+<!--
+<div class="row mobile-center">
+    <div class="columns columns-full large-1 medium-2 small-12">
+        <img src="{{'/img/press-adweek.png'|static}}" class="press-logo">
+    </div>
+    <div class="columns large-2 medium-3 small-12">
+        3/18/2015
+    </div>
+    <div class="columns large-9 medium-7 small-12">
+        <div class="press"><a href="releases/03-18-2015.html" class="press">Mobile App Roundup: SXSW 2015 Edition</a>
+            <br>
+            "Djed is a product designed for families, with a mobile and desktop application used for cataloging and sharing all of a family’s vital information, from health and financial information to school projects, sporting events, trips and more."
+        </div>
+    </div>
+</div>
+-->
+  </div>
+
+
+{% endblock %}

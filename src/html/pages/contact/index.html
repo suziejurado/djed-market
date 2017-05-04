@@ -1,0 +1,35 @@
+{% extends 'src/html/base.html' %}
+
+{% block 'title' %}Djed | Contact{% endblock %}
+
+{% block 'submark' %}
+{% include 'node_modules/djed/marketing/components/submark.html' %}
+{% endblock %}
+
+{% block 'content' %}
+
+<div class="row">
+  <div class="columns columns-full large-12">
+    <h2 class="book headline">Contact Us</h2>
+  </div>
+</div>
+
+<div class="row contact">
+  {% include 'node_modules/djed/marketing/components/contact-us.html' with content %}
+  <div class="columns column-left large-4 medium-5">
+    <hr class="hr-contact-mobile">
+   <h3 class="book">Email</h3>
+   <p><a href="mailto:help@djed.com">help@djed.com</a></p>
+   <hr class="hr-contact">
+   <h3 class="book">Phone</h3>
+   <p>(512) 344-9207</p>
+   <hr class="hr-contact">
+   <h3 class="book">Website</h3>
+   <p><a href="http://www.djed.com">www.djed.com</a></p>
+   <hr class="hr-contact">
+   <h3 class="book">Press</h3>
+   <p><a href="mailto:pr@djed.com">pr@djed.com</a></p>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'src/html/base.html' %}
+
+{% block 'content' %}
+
+{% include 'node_modules/djed/marketing/components/slider.html' with content %}
+
+{% include 'node_modules/djed/marketing/components/product-shot.html' with content %}
+
+<hr>
+
+{% include 'node_modules/djed/marketing/components/privacy-example.html' with content %}
+
+<hr class="hr-privacy">
+
+<div class="row">
+  <div class="columns large=-12">
+    <h2 class="padding-bottom-50 center">Features at a glance</h2>
+  </div>
+</div>
+
+<div class="row center features">
+  <div class="columns large-3 medium-3 small-6 feature">
+    <img src="{{'/img/icon-calendar.svg'|static}}">
+    <h3>Calendar</h3>
+    <p>For appointments, milestones and the big due date.</p>
+  </div>
+  <div class="columns large-3 medium-3 small-6 feature">
+    <img src="{{'/img/icon-contact.svg'|static}}">
+    <h3>Contacts</h3>
+    <p>For doctors, teachers, and the name of that really helpful nurse.</p>
+  </div>
+  <div class="columns large-3 medium-3 small-6 feature">
+    <img src="{{'/img/icon-photos.svg'|static}}">    
+    <h3>Photos</h3>
+    <p>For photo albums and videos of the moments we never forget.</p>
+  </div>
+  <div class="columns large-3 medium-3 small-6 feature">
+    <img src="{{'/img/icon-note.svg'|static}}">    
+    <h3>Notes</h3>
+    <p>For taking note of each trimester and the funny things we learn from parenthood.</p>
+  </div>
+</div>
+
+<div class="row center features">
+  <div class="columns large-3 medium-3 small-6 feature">
+    <img src="{{'/img/icon-document.svg'|static}}">
+    <h3>Documents</h3>
+    <p>For the health forms, the hospital documents, the paperwork and insurance.</p>
+  </div>
+  <div class="columns large-3 medium-3 small-6 feature">
+    <img src="{{'/img/icon-list.svg'|static}}">
+    <h3>Lists</h3>
+    <p>For what to pack, the carseat, the blankets, the camera and the batteries.</p>
+  </div>
+  <div class="columns large-3 medium-3 small-6 feature">
+    <img src="{{'/img/icon-story.svg'|static}}">    
+    <h3>Stories</h3>
+    <p>For Grandma's story about history, family, and love.</p>
+  </div>
+  <div class="columns large-3 medium-3 small-6 feature">
+    <img src="{{'/img/icon-share.svg'|static}}">    
+    <h3>Sharing</h3>
+    <p>For sharing with parents, grandparents, and the extended family.</p>
+  </div>
+</div>
+
+
+<hr>
+
+{% include 'node_modules/djed/marketing/components/request-invite.html' with content %}
+
+{% endblock %}

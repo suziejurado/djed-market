@@ -1,0 +1,29 @@
+{% extends 'src/html/base.html' %}
+
+{% block 'title' %}Djed | Privacy Policy{% endblock %}
+
+{% block 'submark' %}
+{% include 'node_modules/djed/marketing/components/submark.html' %}
+{% endblock %}
+
+{% block 'content' %}
+
+<div class="row">
+  <div class="columns columns-full large-12">
+    <h2 class="book headline">Mobile App Roundup: SXSW 2015 Edition</h2>
+    <span class="meta">This article and its contents originally appeared in AdWeek on March 18, 2015. <a href="http://www.adweek.com/socialtimes/mobile-app-roundup-sxsw-2015-edition/617177" target="_blank">View Original Article.</a></span>
+    <hr class="hr-press">
+    <p>With the 2015 SXSW Interactive Festival in the books, here’s a look at a few of the apps launched or revealed during the show.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="columns columns-full large-6 medium-12">
+    <img src="{{'/img/djed-adweek.jpg'|static}}" class="press-photo">
+  </div>
+  <div class="columns large-6 medium-12">
+
+  	<p><b>Djed</b> (Coming soon to iOS, Android) – Pronounced “Jed,” Djed is a product designed for families, with a mobile and desktop application used for cataloging and sharing all of a family’s vital information, from health and financial information to school projects, sporting events, trips and more. It will support multiple features, including a calendar, contact list, documents, notes, lists, photos, assets and more. The app is built around the idea of a “Tribe,” or a private network of family and close friends, who can share this information in their own private network. The platform announced its preview launch as a web app during SXSW, and will come to iOS first, before launching on Android later this year.</p>
+  </div>
+</div>
+
+{% endblock %}

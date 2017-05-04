@@ -1,0 +1,63 @@
+{% extends 'src/html/base.html' %}
+
+<hr class="internet">
+<div class="row">
+  <div class="columns-full large-12">
+    <p class="internet-tag">The Internet of Family</p>
+  </div>
+</div>
+
+{% block 'title' %}Djed | About{% endblock %}
+
+{% block 'submark' %}
+{% include 'node_modules/djed/marketing/components/submark.html' %}
+{% endblock %}
+
+{% block 'content' %}
+
+<div class="row">
+  <div class="columns columns-full large-12">
+    <h2 class="book headline">Team</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="columns column-left column-padded-right large-6">
+    <img src="{{'/img/djed-team.jpg'|static}}" class="team-photo">
+  </div>
+  <div class="columns column-right large-6">
+    <p>We are a startup in Austin, Texas.  We have 15 people today and depending on how much you love us we expect to grow quickly this year and grow to other countries after that.</p>
+    <p>Our founders have years of Internet startup and Enterprise application success.  They have been trusted by some of the largest companies in the world with highly sensitive information.  They understand privacy and security, have built large-scale applications, and listen carefully to users every day.</p>
+  </div>
+</div>
+
+
+<hr>
+
+<div class="row">
+  <div class="columns columns-full large-12">
+    <h2 class="book headline">Location</h2>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="columns column-right google-maps large-6 large-push-6">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3445.963576027985!2d-97.74219599999999!3d30.26661899999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5082f8141a5%3A0x26cb0b9c8aba5509!2s115+E+5th+St%2C+Austin%2C+TX+78701!5e0!3m2!1sen!2sus!4v1422889071069" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+  </div>
+  <div class="columns column-left column-padded-right large-6 large-pull-6">
+    <p>We are in the heart of downtown Austin, Texas.  Austin is a booming place for Internet companies with many good-sized offices from tech giants like Google, Apple, Facebook, Dropbox (across the street), and personal favorites like Atlassian and HomeAway.  We're in a beautiful old loft building here:</p>
+    <p class="teal book">115 E. 5th St.<br>Austin, TX 78701<br>email:  info@djed.com<br>phone:  +1 512-123-4567</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="columns columns-full large-12">
+    <h2 class="book headline">Investors</h2>
+    <p>We've raised $4 million so far. We have about twenty angel investors. Each of the investors believes family is the most important part of life and embraces our mission as much as we do. These investors are hair moguls, restaurant moguls, former executives at global organizations, private equity investors, hedge fund investors.  If you’d like to learn about this investment opportunity please feel free to contact our CEO at <a href="mailto:dr@djed.com">dr@djed.com</a>.</p>
+  </div>
+</div>
+
+{% endblock %}
